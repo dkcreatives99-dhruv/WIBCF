@@ -1,0 +1,192 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "The Anti-AI Designer",
+    "mission": "Create a diplomatic, authoritative, and emotionally resonant interface for a global NGO."
+  },
+  "visual_language": {
+    "theme_name": "Diplomatic Vanguard",
+    "emotional_tone": "Authoritative, Trustworthy, Global, Culturally Rooted, Transparent",
+    "colors": {
+      "primary": {
+        "name": "Diplomatic Navy",
+        "hex": "#0A192F",
+        "description": "Deep, stable, infinite. Used for primary actions, footers, and strong headers.",
+        "usage": "bg-primary text-primary-foreground"
+      },
+      "secondary": {
+        "name": "Sovereign Gold",
+        "hex": "#C5A059",
+        "description": "Prestige and heritage. Used sparingly for accents, borders, and active states. NOT for main backgrounds.",
+        "usage": "border-secondary text-secondary"
+      },
+      "background": {
+        "name": "Embassy White",
+        "hex": "#F8F9FA",
+        "description": "Clean, neutral, spacious. Not stark white (#FFFFFF), but a very subtle off-white to reduce eye strain.",
+        "usage": "bg-background"
+      },
+      "text": {
+        "primary": "#1E293B",
+        "secondary": "#475569",
+        "muted": "#94A3B8"
+      },
+      "feedback": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444"
+      }
+    },
+    "typography": {
+      "headings": {
+        "font_family": "Playfair Display, Merriweather, serif",
+        "weight": "font-bold",
+        "tracking": "tracking-tight",
+        "description": "Traditional serif fonts that convey established authority and history."
+      },
+      "body": {
+        "font_family": "Inter, Lato, sans-serif",
+        "weight": "font-normal",
+        "leading": "leading-relaxed",
+        "description": "Clean, highly readable sans-serif for long-form policy documents and descriptions."
+      },
+      "accent": {
+        "font_family": "Barlow Condensed, sans-serif",
+        "usage": "Uppercased labels, navigation items, stats."
+      }
+    },
+    "spacing": {
+      "base": "p-4",
+      "section_padding": "py-20 md:py-32",
+      "container_padding": "px-6 md:px-12",
+      "grid_gap": "gap-8 md:gap-12"
+    },
+    "borders": {
+      "radius": "rounded-sm",
+      "width": "border",
+      "style": "solid",
+      "color": "border-border/60"
+    },
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(0,0,0,0.08)]",
+      "hover": "shadow-[0_8px_24px_rgba(0,0,0,0.12)]",
+      "dropdown": "shadow-xl"
+    }
+  },
+  "component_strategies": {
+    "buttons": {
+      "primary": "bg-primary text-white rounded-sm hover:bg-primary/90 hover:shadow-lg transition-all duration-300 uppercase tracking-widest text-xs font-semibold px-8 py-3",
+      "secondary": "bg-transparent border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-widest text-xs font-semibold px-8 py-3",
+      "ghost": "text-primary hover:bg-primary/5 uppercase tracking-widest text-xs font-semibold"
+    },
+    "cards": {
+      "style": "bg-white border border-border/40 rounded-sm hover:border-secondary/50 transition-colors duration-300",
+      "padding": "p-8"
+    },
+    "inputs": {
+      "style": "bg-white border-input rounded-sm focus:ring-1 focus:ring-secondary focus:border-secondary transition-all"
+    },
+    "navigation": {
+      "style": "backdrop-blur-xl bg-white/80 border-b border-border/40 sticky top-0 z-50",
+      "link_style": "text-sm font-medium text-primary/80 hover:text-primary transition-colors uppercase tracking-wider"
+    }
+  },
+  "layout_strategies": {
+    "bento_grid": {
+      "description": "Use for 'Focus Areas' and 'Impact' sections to create visual interest.",
+      "classes": "grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]"
+    },
+    "hero_section": {
+      "description": "Full-width immersive background with heavy overlay for text readability. Center-aligned text for maximum gravitas.",
+      "classes": "relative min-h-[80vh] flex items-center justify-center text-center overflow-hidden"
+    },
+    "split_screen": {
+      "description": "Use for 'About' and 'Leadership' introductions. 50% image, 50% text.",
+      "classes": "grid grid-cols-1 lg:grid-cols-2 gap-0"
+    }
+  },
+  "assets": {
+    "image_urls": {
+      "hero_backgrounds": [
+        {
+          "url": "https://images.unsplash.com/photo-1766961980283-3a5922285b0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxkaXBsb21hdGljJTIwaGFuZHNoYWtlJTIwaW50ZXJuYXRpb25hbCUyMGZsYWdzJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzI0NTc2OTl8MA&ixlib=rb-4.1.0&q=85",
+          "description": "National flags outdoors - Excellent for 'Global Presence' or Hero background."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxnbG9iYWwlMjB3b3JsZCUyMG1hcCUyMGNvbm5lY3Rpb24lMjBuZXR3b3JrJTIwYWJzdHJhY3QlMjBibHVlJTIwZ29sZHxlbnwwfHx8fDE3NzI0NTc2OTF8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Abstract global sphere - High tech, suitable for 'Research' or 'Network' sections."
+        },
+         {
+          "url": "https://images.unsplash.com/photo-1644673640991-f3c4a9dafe9a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjB3b3JsZCUyMG1hcCUyMGNvbm5lY3Rpb24lMjBuZXR3b3JrJTIwYWJzdHJhY3QlMjBibHVlJTIwZ29sZHxlbnwwfHx8fDE3NzI0NTc2OTF8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Black background with yellow lines - Strong contrast for a 'Data' or 'Statistics' section."
+        }
+      ],
+      "cultural_elements": [
+        {
+          "url": "https://images.unsplash.com/photo-1752917889576-46419c28de00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjdWx0dXJlJTIwdHJhZGl0aW9uJTIwYXJ0JTIwZGlzdGluY3QlMjBlbGVnYW50fGVufDB8fHx8MTc3MjQ1NzY4OXww&ixlib=rb-4.1.0&q=85",
+          "description": "Ornate gold decorations - Perfect for 'Cultural Diplomacy' background or accent."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1733737201456-202d94d4ae80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMGhhbmQlMjBtdWRyYSUyMGNsb3NlJTIwdXAlMjBlbGVnYW50fGVufDB8fHx8MTc3MjQ1NzcwMHww&ixlib=rb-4.1.0&q=85",
+          "description": "Woman in white sari (Mudra) - Elegant, suitable for 'Arts' or 'Heritage' sub-sections."
+        }
+      ],
+      "leadership_people": [
+         {
+          "url": "https://images.unsplash.com/photo-1659355894406-977b8c4503d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBjb3Jwb3JhdGUlMjBidXNpbmVzcyUyMG1hbiUyMHN1aXQlMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcyNDU3NzAyfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Man in suit arms crossed - Use for 'Founder' or 'Chairman'."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1678263998418-8fd3afcb3d89?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjb3Jwb3JhdGUlMjBidXNpbmVzcyUyMHdvbWFuJTIwc2FyZWUlMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcyNDU3NzAxfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Woman in purple sari - Use for 'Advisory Board' or 'Director'."
+        },
+        {
+           "url": "https://images.unsplash.com/photo-1770627000564-3feb36aecbcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBjb3Jwb3JhdGUlMjBidXNpbmVzcyUyMHdvbWFuJTIwc2FyZWUlMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcyNDU3NzAxfDA&ixlib=rb-4.1.0&q=85",
+           "description": "Woman in pink blazer - Use for 'Country Coordinator'."
+        }
+      ],
+      "business_meetings": [
+        {
+          "url": "https://images.unsplash.com/photo-1573166364839-1bfe9196c23e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIwZ3JvdXAlMjBpbnRlcm5hdGlvbmFsJTIwYnVzaW5lc3MlMjBtZWV0aW5nJTIwY29uZmVyZW5jZSUyMHJvb218ZW58MHx8fHwxNzcyNDU3Njg4fDA&ixlib=rb-4.1.0&q=85",
+          "description": "Meeting table - Use for 'Programs' or 'Policy Dialogue' section."
+        }
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-[1.5px] w-6 h-6"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' if not present.",
+    "Install 'clsx' and 'tailwind-merge' for class handling.",
+    "Create a 'Layout' component that wraps all pages with the Navigation and Footer.",
+    "Ensure the Footer is massive (py-20) with a dark Navy background and Gold text accents.",
+    "Use 'Playfair Display' for all H1-H3 headings. Use 'Inter' for body text.",
+    "Do NOT use gradients for backgrounds. Use solid colors or subtle textures (noise/grain).",
+    "Forms must have a 'Diplomatic' feel: sharp corners, minimal borders, clear labels.",
+    "Use the provided image URLs strictly. Do not use placeholders.",
+    "Implement the 'Bento Grid' for the 'Focus Areas' section on the Home page."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖 🧠 💭 💡 🔮 🎯 📚 🎭 🎬 🎪 🎉 🎊 🎁 🎀 🎂 🍰 🎈 🎨 🎰 💰 💵 💳 🏦 💎 🪙 💸 🤑 📊 📈 📉 💹 🔢 🏆 🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
