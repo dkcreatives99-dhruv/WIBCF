@@ -1,83 +1,84 @@
-# World Indian Business & Culture Foundation - PRD
+# World Indian Business & Culture Foundation (WIBCF) - PRD
 
 ## Original Problem Statement
-Build a professional, international-standard 12-page website for WORLD INDIAN BUSINESS & CULTURE FOUNDATION - a global non-profit organization focused on:
-- Global Indian business collaboration
-- Cultural diplomacy
-- Research & policy dialogue
-- Sustainable development goals (SDGs)
-- Leadership networking
-- Cross-border trade & investment cooperation
+Build a professional, international-standard 12-page website for WORLD INDIAN BUSINESS & CULTURE FOUNDATION - a Pan-Asia focused non-profit organization.
+
+## Updates Implemented (January 2026)
+
+### Phase 1: Initial MVP
+- 12-page website implementation
+- Contact and Membership forms with database storage
+- Professional NGO design
+
+### Phase 2: Asia Focus & Branding Update
+- Updated messaging throughout to focus on Asian countries
+- Implemented official WIBCF logo
+- Updated domain references to wibcf.org
+- Updated email to info@wibcf.org
+- Leadership page: Founder (Mr. Ravichandren Raman) with "Coming Soon" for Advisory Board, Country Coordinators, and Global Ambassadors
+- Media page converted to "Coming Soon"
+- Scroll-to-top fix implemented
+- Footer description updated to Pan-Asia focus
 
 ## User Personas
-1. **Global Indian Diaspora Leaders** - Business executives and entrepreneurs seeking networking opportunities
-2. **Cultural Ambassadors** - Individuals promoting Indian heritage internationally
-3. **Policy Makers** - Government and institutional officials interested in trade dialogues
-4. **Young Professionals** - Emerging leaders looking for mentorship and development
-5. **Potential Partners/Donors** - Organizations interested in collaboration
+1. **Pan-Asian Business Leaders** - Indian-origin entrepreneurs across Asian countries
+2. **Cultural Ambassadors** - Promoting Indian heritage in Asia
+3. **Policy Makers** - Government officials in Malaysia and Asian economies
+4. **Young Professionals** - Emerging leaders in the region
+5. **Potential Partners** - Asian organizations interested in collaboration
 
 ## Core Requirements (Static)
-- 12 Pages: Home, About, Leadership, Programs, Research, Media, Contact, Membership, Terms, Privacy, Disclaimer, Security, Cookies
-- Premium, Institutional, Clean NGO-style design
+- 12 Pages: Home, About, Leadership, Programs, Research, Media, Contact, Membership + Legal pages
 - White + Navy Blue (#0A192F) + Gold (#C5A059) theme
-- Fully responsive (Desktop + Tablet + Mobile)
-- Simple membership inquiry form (no auth)
-- Contact form with database storage
-- SEO optimized structure
+- Pan-Asia focused messaging
+- Official WIBCF logo integrated
+- Malaysia headquarters with Pan-Asia operations
 
-## What's Been Implemented ✅ (January 2026)
+## What's Been Implemented ✅
+
 ### Backend
-- FastAPI server with MongoDB
-- Contact form API (`POST /api/contact`, `GET /api/contact`)
-- Membership inquiry API (`POST /api/membership-inquiry`, `GET /api/membership-inquiry`)
-- Newsletter subscription API (`POST /api/newsletter/subscribe`)
-- Health check endpoint
+- FastAPI with MongoDB
+- Contact form API (POST/GET /api/contact)
+- Membership inquiry API (POST/GET /api/membership-inquiry)
+- Newsletter subscription API
 
-### Frontend (12 Pages)
-1. **HomePage** - Hero with international flags, About preview, Mission statement, Focus Areas (Bento grid), Stats, Global Presence, CTAs
-2. **AboutPage** - Vision, Mission, Core Values (7 values), Why We Exist
-3. **LeadershipPage** - Founders, Advisory Board, Country Coordinators, Global Ambassadors
-4. **ProgramsPage** - Coming Soon banner, 5 future program placeholders
-5. **ResearchPage** - Reports & Papers, SDG Alignment (8, 9, 17), Policy Papers
-6. **MediaPage** - News, Press Releases, Media Mentions
-7. **ContactPage** - Contact form, Contact info, Map placeholder
-8. **MembershipPage** - Benefits, Inquiry form
-9-12. **Legal Pages** - Terms, Privacy, Disclaimer, Security, Cookies
+### Frontend
+1. **HomePage** - Asia-focused hero, mission statement, focus areas
+2. **AboutPage** - Pan-Asian vision and mission
+3. **LeadershipPage** - Founder (Mr. Ravichandren Raman) with full bio; Advisory Board, Coordinators, Ambassadors marked "Coming Soon"
+4. **ProgramsPage** - 5 program placeholders (unchanged)
+5. **ResearchPage** - Asian SDG alignment focus
+6. **MediaPage** - Converted to "Coming Soon" layout
+7. **ContactPage** - info@wibcf.org, Malaysia headquarters
+8. **MembershipPage** - Asian country options
+9-12. **Legal Pages** - Updated with wibcf.org references
 
-### Design Implementation
-- Typography: Playfair Display (headings), Inter (body), Barlow Condensed (accents)
-- Glassmorphic sticky header
-- Massive footer with social links
-- Professional animations and hover effects
-- data-testid attributes for testing
+### Design Updates
+- Official WIBCF logo in header and footer
+- Scroll-to-top on navigation
+- Pan-Asia focused footer description
+- Updated country lists to Asian countries
+
+## Known Issues
+- "Made with Emergent" badge appears in preview environment (will not appear on production domain wibcf.org)
+- Minor scroll offset (77px) on navigation clicks (due to fixed header - acceptable)
 
 ## Prioritized Backlog
-### P0 (Critical) - COMPLETED ✅
-- All 12 pages implemented
-- Backend APIs functional
-- Forms with database storage
+### P0 - COMPLETED ✅
+- All Phase 2 updates implemented
 
 ### P1 (High Priority) - Future
+- Add actual founder photo
+- Cookie consent banner
 - SEO meta tags optimization
-- Cookie consent banner integration
-- Image optimization/lazy loading
-- Add actual content/photos from client
 
 ### P2 (Medium Priority) - Future
 - Newsletter signup in footer
-- Admin dashboard for viewing inquiries
-- Multi-language support
-- Google Analytics integration
-
-### P3 (Nice to Have) - Future
-- Event calendar integration
-- Blog/News CMS
-- Member portal
-- Online donation system
+- Admin dashboard for inquiries
+- Google Analytics
 
 ## Next Tasks
-1. Add actual content (replace placeholders with real leadership photos/bios)
-2. Implement cookie consent banner
-3. Add SEO meta tags to all pages
-4. Set up Google Analytics
-5. Create admin dashboard for managing inquiries
+1. Upload actual founder photo to replace placeholder
+2. Deploy to production domain wibcf.org
+3. Implement cookie consent banner
+4. Add SEO meta tags
