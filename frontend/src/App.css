@@ -1,34 +1,331 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Global App Styles - World Indian Business & Culture Foundation */
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 2rem;
 }
 
-.App-link {
-    color: #61dafb;
+/* Navigation styles */
+.nav-link {
+  position: relative;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(10, 25, 47, 0.8);
+  transition: color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.nav-link:hover {
+  color: #0A192F;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #C5A059;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Page title styles */
+.page-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: #0A192F;
+}
+
+.page-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: #475569;
+}
+
+/* Section title */
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: #0A192F;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: #475569;
+  max-width: 600px;
+}
+
+/* Card styles */
+.diplomatic-card {
+  background: white;
+  border: 1px solid rgba(214, 216, 222, 0.4);
+  transition: all 0.3s ease;
+}
+
+.diplomatic-card:hover {
+  border-color: rgba(197, 160, 89, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Leadership card */
+.leadership-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.leadership-card-image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.leadership-card:hover .leadership-card-image {
+  transform: scale(1.05);
+}
+
+/* Focus area card */
+.focus-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border: 1px solid rgba(214, 216, 222, 0.4);
+  transition: all 0.3s ease;
+}
+
+.focus-card:hover {
+  border-color: #C5A059;
+  transform: translateY(-4px);
+}
+
+.focus-card-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  color: #C5A059;
+}
+
+/* News card */
+.news-card {
+  background: white;
+  border: 1px solid rgba(214, 216, 222, 0.4);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.news-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.news-card-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.news-card:hover .news-card-image {
+  transform: scale(1.05);
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: white;
+  border: 1px solid rgba(214, 216, 222, 0.6);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #C5A059;
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.1);
+}
+
+.form-input::placeholder {
+  color: #94A3B8;
+}
+
+.form-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #0A192F;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Footer styles */
+.footer {
+  background: #0A192F;
+  color: white;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #C5A059;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  background: #0A192F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background: #C5A059;
+  transform: translateY(-4px);
+}
+
+/* SDG badge */
+.sdg-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+}
+
+/* Coming soon banner */
+.coming-soon-banner {
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  color: #0A192F;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Legal page styles */
+.legal-content {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.legal-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  color: #0A192F;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  color: #0A192F;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content p {
+  margin-bottom: 1rem;
+}
+
+.legal-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Map placeholder */
+.map-placeholder {
+  background: #0A192F;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A059' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+  }
+  
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
