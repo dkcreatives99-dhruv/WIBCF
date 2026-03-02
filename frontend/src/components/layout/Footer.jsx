@@ -6,10 +6,8 @@ import {
   Linkedin,
   Twitter,
   Facebook,
-  Instagram,
-  ArrowUp
+  Instagram
 } from 'lucide-react';
-import { useState, useEffect } from 'react';
 
 const quickLinks = [
   { name: 'Home', path: '/' },
@@ -30,19 +28,6 @@ const legalLinks = [
 ];
 
 export const Footer = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 500);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer data-testid="main-footer" className="footer">
@@ -203,15 +188,6 @@ export const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
-      <button
-        onClick={scrollToTop}
-        data-testid="scroll-to-top-btn"
-        className={`scroll-to-top ${showScrollTop ? 'visible' : ''}`}
-        aria-label="Scroll to top"
-      >
-        <ArrowUp className="w-5 h-5" />
-      </button>
     </footer>
   );
 };
