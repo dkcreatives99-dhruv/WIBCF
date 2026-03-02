@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { 
   MapPin, 
   Mail, 
-  Phone, 
   Globe,
   Linkedin,
   Twitter,
@@ -30,14 +29,6 @@ const legalLinks = [
   { name: 'Cookies Policy', path: '/cookies' },
 ];
 
-const focusAreas = [
-  'Global Business Forums',
-  'Cultural Exchange',
-  'Policy & Research',
-  'Youth Leadership',
-  'SDG Partnerships',
-];
-
 export const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -61,17 +52,15 @@ export const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             {/* About Foundation */}
             <div className="lg:col-span-1">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-[#C5A059] flex items-center justify-center">
-                  <span className="text-[#0A192F] font-bold text-lg font-accent">WIBCF</span>
-                </div>
+              <div className="mb-6">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_business-culture-hub/artifacts/h0qbez6z_WIBCF%20Logo.jpeg"
+                  alt="WIBCF Logo"
+                  className="h-16 w-auto object-contain bg-white p-2 rounded"
+                />
               </div>
-              <h3 className="text-white font-accent uppercase tracking-wider text-sm mb-4">
-                World Indian Business & Culture Foundation
-              </h3>
               <p className="text-white/60 text-sm leading-relaxed mb-6">
-                Empowering global Indian leadership through business collaboration, 
-                cultural diplomacy, and sustainable development partnerships.
+                WORLD INDIAN BUSINESS & CULTURE FOUNDATION (WIBCF) is a Pan-Asia focused non-profit organization promoting business excellence, cultural diplomacy, and sustainable partnerships across Asian countries.
               </p>
               {/* Social Icons */}
               <div className="flex gap-4">
@@ -159,24 +148,24 @@ export const Footer = () => {
                 <li className="flex items-start gap-3">
                   <Mail className="w-4 h-4 text-[#C5A059] mt-1 flex-shrink-0" />
                   <a 
-                    href="mailto:info@worldindianfoundation.org"
+                    href="mailto:info@wibcf.org"
                     data-testid="footer-email"
                     className="footer-link"
                   >
-                    info@worldindianfoundation.org
+                    info@wibcf.org
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <Globe className="w-4 h-4 text-[#C5A059] mt-1 flex-shrink-0" />
                   <span className="text-white/60 text-sm">
-                    www.worldindianfoundation.org
+                    www.wibcf.org
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-[#C5A059] mt-1 flex-shrink-0" />
                   <span className="text-white/60 text-sm">
-                    Global Office<br />
-                    <span className="text-white/40">(To Be Announced)</span>
+                    Malaysia (Headquarters)<br />
+                    <span className="text-white/40">Pan-Asia Operations</span>
                   </span>
                 </li>
               </ul>
@@ -193,7 +182,7 @@ export const Footer = () => {
               © 2026 WORLD INDIAN BUSINESS & CULTURE FOUNDATION. All Rights Reserved.
             </p>
             <p className="text-white/30 text-xs">
-              Connecting Nations. Strengthening Partnerships. Preserving Heritage.
+              Strengthening Partnerships Across Asia
             </p>
           </div>
         </div>

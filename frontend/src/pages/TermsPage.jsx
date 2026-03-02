@@ -50,10 +50,6 @@ export default function TermsPage() {
               prohibited other than in accordance with the copyright notice, which forms part of these 
               terms and conditions.
             </p>
-            <p>
-              All trademarks reproduced in this website which are not the property of, or licensed to, 
-              the operator are acknowledged on the website.
-            </p>
 
             <h2>4. Membership Terms</h2>
             <p>
@@ -70,7 +66,7 @@ export default function TermsPage() {
 
             <h2>5. Event Participation</h2>
             <p>
-              Participation in Foundation events, programs, and activities is subject to:
+              Participation in Foundation events, programs, and activities across Asian countries is subject to:
             </p>
             <ul>
               <li>Registration and payment of applicable fees</li>
@@ -78,53 +74,34 @@ export default function TermsPage() {
               <li>Adherence to venue rules and safety protocols</li>
               <li>Acceptance of photography/recording policies as communicated</li>
             </ul>
-            <p>
-              The Foundation reserves the right to refuse entry or remove participants who violate 
-              these terms or behave inappropriately.
-            </p>
 
             <h2>6. Limitation of Liability</h2>
             <p>
               The Foundation, its directors, employees, and affiliates shall not be liable for any 
-              direct, indirect, incidental, consequential, or punitive damages arising out of:
-            </p>
-            <ul>
-              <li>Your use of or inability to use our website or services</li>
-              <li>Any errors or omissions in the content</li>
-              <li>Any unauthorized access to or use of our servers</li>
-              <li>Any interruption or cessation of transmission to or from our website</li>
-              <li>Any bugs, viruses, trojan horses, or similar threats</li>
-            </ul>
-
-            <h2>7. Indemnification</h2>
-            <p>
-              You agree to indemnify, defend, and hold harmless the Foundation and its officers, 
-              directors, employees, and agents from and against any claims, liabilities, damages, 
-              losses, and expenses arising out of or in any way connected with your access to or 
-              use of our website and services.
+              direct, indirect, incidental, consequential, or punitive damages arising out of your 
+              use of or inability to use our website or services.
             </p>
 
-            <h2>8. Governing Law</h2>
+            <h2>7. Governing Law</h2>
             <p>
               These terms and conditions are governed by and construed in accordance with applicable 
               international laws. Any disputes relating to these terms shall be subject to the 
-              exclusive jurisdiction of the courts in the Foundation's registered jurisdiction.
+              exclusive jurisdiction of the courts in Malaysia.
             </p>
 
-            <h2>9. Changes to Terms</h2>
+            <h2>8. Changes to Terms</h2>
             <p>
-              The Foundation reserves the right to modify these terms at any time. We will notify 
-              users of any significant changes through our website or via email. Continued use of 
+              The Foundation reserves the right to modify these terms at any time. Continued use of 
               the website after such changes constitutes acceptance of the new terms.
             </p>
 
-            <h2>10. Contact Information</h2>
+            <h2>9. Contact Information</h2>
             <p>
               For any questions regarding these Terms & Conditions, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong> legal@worldindianfoundation.org<br />
-              <strong>Website:</strong> www.worldindianfoundation.org
+              <strong>Email:</strong> info@wibcf.org<br />
+              <strong>Website:</strong> www.wibcf.org
             </p>
           </div>
         </div>

@@ -25,12 +25,12 @@ import axios from 'axios';
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const countries = [
-  'United States', 'United Kingdom', 'United Arab Emirates', 'Singapore', 
-  'Australia', 'Canada', 'Germany', 'India', 'South Africa', 'Other'
+  'Malaysia', 'Singapore', 'United Arab Emirates', 'India', 
+  'Japan', 'Thailand', 'Indonesia', 'South Korea', 'Other'
 ];
 
 const interestAreas = [
-  'Global Business Forums',
+  'Pan-Asia Business Forums',
   'Cultural Exchange Initiatives',
   'Policy & Research Dialogues',
   'Youth Leadership Programs',
@@ -42,23 +42,23 @@ const interestAreas = [
 const benefits = [
   {
     icon: Globe,
-    title: 'Global Network Access',
-    description: 'Connect with Indian-origin leaders, entrepreneurs, and professionals across 50+ countries.'
+    title: 'Pan-Asian Network',
+    description: 'Connect with Indian-origin leaders, entrepreneurs, and professionals across Asian countries.'
   },
   {
     icon: Briefcase,
     title: 'Business Opportunities',
-    description: 'Exclusive access to cross-border trade partnerships and investment opportunities.'
+    description: 'Exclusive access to cross-border trade partnerships and investment opportunities within Asia.'
   },
   {
     icon: Users,
     title: 'Leadership Events',
-    description: 'Invitations to summits, roundtables, and networking events worldwide.'
+    description: 'Invitations to summits, roundtables, and networking events across Asian countries.'
   },
   {
     icon: Heart,
     title: 'Cultural Engagement',
-    description: 'Participate in heritage preservation and cultural diplomacy initiatives.'
+    description: 'Participate in heritage preservation and cultural diplomacy initiatives across Asia.'
   }
 ];
 
@@ -127,7 +127,7 @@ export default function MembershipPage() {
               Become a Member
             </h1>
             <p className="text-lg text-white/70 leading-relaxed animate-fade-in-up delay-200">
-              Join a global network of leaders committed to advancing Indian business excellence and cultural heritage.
+              Join a Pan-Asian network of leaders committed to advancing Indian business excellence and cultural heritage across Asia.
             </p>
           </div>
         </div>

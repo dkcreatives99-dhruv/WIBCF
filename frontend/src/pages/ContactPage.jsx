@@ -23,8 +23,8 @@ import axios from 'axios';
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const countries = [
-  'United States', 'United Kingdom', 'United Arab Emirates', 'Singapore', 
-  'Australia', 'Canada', 'Germany', 'India', 'South Africa', 'Other'
+  'Malaysia', 'Singapore', 'United Arab Emirates', 'India', 
+  'Japan', 'Thailand', 'Indonesia', 'South Korea', 'Other'
 ];
 
 export default function ContactPage() {
@@ -119,11 +119,11 @@ export default function ContactPage() {
                       Email
                     </p>
                     <a 
-                      href="mailto:info@worldindianfoundation.org"
+                      href="mailto:info@wibcf.org"
                       data-testid="contact-email"
                       className="text-[#475569] hover:text-[#C5A059] transition-colors"
                     >
-                      info@worldindianfoundation.org
+                      info@wibcf.org
                     </a>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                       Website
                     </p>
                     <p className="text-[#475569]">
-                      www.worldindianfoundation.org
+                      www.wibcf.org
                     </p>
                   </div>
                 </div>
@@ -148,10 +148,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-accent uppercase tracking-wider text-[#0A192F] text-xs mb-1">
-                      Global Office
+                      Headquarters
                     </p>
                     <p className="text-[#475569]">
-                      To Be Announced
+                      Malaysia<br />
+                      <span className="text-[#94A3B8]">Pan-Asia Operations</span>
                     </p>
                   </div>
                 </div>
@@ -162,10 +163,10 @@ export default function ContactPage() {
                 <div className="text-center">
                   <MapPin className="w-10 h-10 text-[#C5A059] mx-auto mb-3" />
                   <p className="text-white/60 font-accent uppercase tracking-wider text-xs">
-                    Global Headquarters
+                    Pan-Asia Headquarters
                   </p>
                   <p className="text-white/40 text-sm mt-1">
-                    Location Coming Soon
+                    Malaysia
                   </p>
                 </div>
               </div>

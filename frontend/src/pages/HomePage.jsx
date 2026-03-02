@@ -2,53 +2,50 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { 
   Globe, 
-  Users, 
-  BookOpen, 
-  Target, 
-  Handshake,
-  ArrowRight,
   Building2,
   Landmark,
   GraduationCap,
-  Leaf
+  Leaf,
+  ArrowRight,
+  BookOpen
 } from 'lucide-react';
 
 const focusAreas = [
   {
     icon: Building2,
-    title: 'Global Business Forums',
-    description: 'Facilitating cross-border trade dialogues and investment partnerships among Indian-origin business leaders worldwide.',
+    title: 'Pan-Asia Business Forums',
+    description: 'Facilitating cross-border trade dialogues and investment partnerships between Indian-origin business leaders and Asian economies.',
     color: 'bg-[#0A192F]'
   },
   {
     icon: Landmark,
     title: 'Cultural Exchange Initiatives',
-    description: 'Preserving and promoting Indian cultural heritage through arts, traditions, and diplomatic exchanges.',
+    description: 'Preserving and promoting Indian cultural heritage through arts, traditions, and diplomatic exchanges across Asian countries.',
     color: 'bg-[#C5A059]'
   },
   {
     icon: BookOpen,
     title: 'Policy & Research Dialogues',
-    description: 'Conducting evidence-based research to influence policy decisions and economic development strategies.',
+    description: 'Conducting evidence-based research to influence policy decisions and economic development strategies in the Asian region.',
     color: 'bg-[#0A192F]'
   },
   {
     icon: GraduationCap,
     title: 'Youth Leadership Development',
-    description: 'Nurturing the next generation of global Indian leaders through mentorship and educational programs.',
+    description: 'Nurturing the next generation of Pan-Asian leaders through mentorship and educational programs.',
     color: 'bg-[#C5A059]'
   },
   {
     icon: Leaf,
     title: 'SDG Impact Partnerships',
-    description: 'Aligning our initiatives with UN Sustainable Development Goals for lasting global impact.',
+    description: 'Aligning our initiatives with UN Sustainable Development Goals for lasting impact across Asian nations.',
     color: 'bg-[#0A192F]'
   }
 ];
 
 const stats = [
-  { value: '50+', label: 'Country Presence', sublabel: 'Coming Soon' },
-  { value: '1000+', label: 'Global Members', sublabel: 'Target' },
+  { value: '15+', label: 'Asian Countries', sublabel: 'Focus Region' },
+  { value: '1000+', label: 'Members', sublabel: 'Target' },
   { value: '100+', label: 'Partner Organizations', sublabel: 'Target' },
   { value: '17', label: 'SDG Alignments', sublabel: 'United Nations' }
 ];
@@ -72,10 +69,10 @@ export default function HomePage() {
         <div className="hero-content max-w-4xl mx-auto animate-fade-in-up">
           <div className="gold-line mx-auto mb-8" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Empowering Global Indian Leadership Through Business & Culture
+            Empowering Business & Cultural Collaboration Across Asia
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Connecting Nations. Strengthening Partnerships. Preserving Heritage.
+            Connecting Indian Leadership with Asian Economies for Sustainable Growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/about">
@@ -115,17 +112,17 @@ export default function HomePage() {
                 About The Foundation
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0A192F] mb-6">
-                Uniting Indian Excellence Across Borders
+                Uniting Indian Excellence Across Asia
               </h2>
               <div className="space-y-4 text-[#475569] leading-relaxed">
                 <p>
-                  The World Indian Business & Culture Foundation stands at the intersection of global commerce and cultural preservation. We bring together Indian-origin leaders, entrepreneurs, and institutions from every corner of the world.
+                  The World Indian Business & Culture Foundation stands at the intersection of Pan-Asian commerce and cultural preservation. We bring together Indian-origin leaders, entrepreneurs, and institutions from across Asian countries.
                 </p>
                 <p>
-                  Our mission transcends geographical boundaries, creating a powerful network that fosters economic collaboration while honoring the rich tapestry of Indian heritage.
+                  Our mission transcends geographical boundaries, creating a powerful network that fosters economic collaboration between India and Asian economies while honoring the rich tapestry of shared heritage.
                 </p>
                 <p>
-                  Through strategic partnerships, policy dialogues, and cultural initiatives, we're building bridges that connect nations and strengthen the global Indian diaspora's influence on sustainable development.
+                  Through strategic partnerships, policy dialogues, and cultural initiatives, we're building bridges that strengthen Pan-Asian cooperation and sustainable development.
                 </p>
               </div>
               <Link to="/about">
@@ -147,7 +144,7 @@ export default function HomePage() {
               <div className="absolute -bottom-6 -left-6 bg-[#0A192F] p-6 max-w-xs hidden md:block">
                 <p className="text-[#C5A059] font-accent uppercase tracking-wider text-xs mb-2">Our Vision</p>
                 <p className="text-white text-sm leading-relaxed">
-                  To become the leading global platform uniting Indian business excellence and cultural heritage.
+                  To become the leading Pan-Asian platform uniting Indian business excellence and cultural heritage.
                 </p>
               </div>
             </div>
@@ -164,7 +161,7 @@ export default function HomePage() {
               Our Mission
             </p>
             <blockquote className="text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-relaxed mb-8">
-              "To foster global collaboration among Indian-origin leaders, entrepreneurs, and institutions to advance economic growth, cultural heritage, and sustainable development."
+              "To foster strategic collaboration between Indian-origin leaders and Asian countries in business, culture, policy dialogue, and sustainable development."
             </blockquote>
             <div className="gold-line mx-auto" />
           </div>
@@ -182,7 +179,7 @@ export default function HomePage() {
               Our Focus Areas
             </h2>
             <p className="text-[#475569] max-w-2xl mx-auto">
-              Strategic initiatives designed to strengthen global Indian collaboration and sustainable development.
+              Strategic initiatives designed to strengthen Pan-Asian collaboration and sustainable development.
             </p>
           </div>
 
@@ -243,34 +240,34 @@ export default function HomePage() {
                 Our Reach
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#0A192F] mb-6">
-                Global Presence
+                Pan-Asia Presence
               </h2>
               <p className="text-[#475569] leading-relaxed mb-6">
-                The Foundation is establishing country chapters across major economies where Indian diaspora communities thrive. Our network spans continents, connecting leaders, entrepreneurs, and cultural ambassadors.
+                The Foundation is establishing chapters across major Asian economies where Indian diaspora communities thrive. Our network spans the continent, connecting leaders, entrepreneurs, and cultural ambassadors.
               </p>
               <div className="bg-white p-6 border border-[#0A192F]/10">
                 <p className="font-accent uppercase tracking-wider text-xs text-[#C5A059] mb-2">
-                  Country Chapters
+                  Asian Regional Focus
                 </p>
                 <p className="text-[#0A192F] font-semibold">
-                  Coming Soon
+                  Expanding Across Asia
                 </p>
                 <p className="text-sm text-[#475569] mt-2">
-                  USA • UK • UAE • Singapore • Australia • Canada • Germany • and more
+                  Malaysia • Singapore • UAE • India • Japan • South Korea • Thailand • Indonesia • and more
                 </p>
               </div>
             </div>
             <div className="map-placeholder h-[400px] flex items-center justify-center relative">
               <img
                 src="https://images.unsplash.com/photo-1684610529682-553625a1ffed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxnbG9iYWwlMjB3b3JsZCUyMG1hcCUyMGNvbm5lY3Rpb24lMjBuZXR3b3JrJTIwYWJzdHJhY3QlMjBibHVlJTIwZ29sZHxlbnwwfHx8fDE3NzI0NTc2OTF8MA&ixlib=rb-4.1.0&q=85"
-                alt="Global Network"
+                alt="Pan-Asia Network"
                 className="w-full h-full object-cover opacity-60"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <Globe className="w-16 h-16 text-[#C5A059] mx-auto mb-4" />
                   <p className="text-white font-accent uppercase tracking-wider">
-                    Global Network Expanding
+                    Pan-Asia Network Expanding
                   </p>
                 </div>
               </div>
@@ -287,7 +284,7 @@ export default function HomePage() {
               Be Part of the Movement
             </h2>
             <p className="text-white/70 text-lg mb-10">
-              Join a global network of leaders, entrepreneurs, and change-makers committed to advancing Indian business excellence and cultural heritage.
+              Join a Pan-Asian network of leaders, entrepreneurs, and change-makers committed to advancing Indian business excellence and cultural heritage across Asia.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/membership">

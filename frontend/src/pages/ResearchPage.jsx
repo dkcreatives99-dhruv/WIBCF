@@ -20,25 +20,25 @@ const reports = [
   {
     title: 'Annual Report 2025',
     type: 'Annual Report',
-    description: 'Comprehensive overview of our activities, achievements, and financial performance.',
+    description: 'Comprehensive overview of our Pan-Asian activities, achievements, and financial performance.',
     status: 'Coming Soon'
   },
   {
-    title: 'Global Indian Business Index',
+    title: 'Pan-Asian Business Index',
     type: 'Research Paper',
-    description: 'Analysis of Indian diaspora business impact across major economies worldwide.',
+    description: 'Analysis of Indian diaspora business impact across major Asian economies.',
     status: 'Coming Soon'
   },
   {
-    title: 'SDG Impact Assessment',
+    title: 'Asian SDG Impact Assessment',
     type: 'Impact Report',
-    description: 'Measuring our contribution to UN Sustainable Development Goals.',
+    description: 'Measuring our contribution to UN Sustainable Development Goals across Asian countries.',
     status: 'Coming Soon'
   },
   {
-    title: 'Cultural Diplomacy in the 21st Century',
+    title: 'Cultural Diplomacy in Asia',
     type: 'Policy Paper',
-    description: 'Examining the role of cultural exchange in modern international relations.',
+    description: 'Examining the role of cultural exchange in strengthening Pan-Asian relations.',
     status: 'Coming Soon'
   }
 ];
@@ -57,10 +57,10 @@ export default function ResearchPage() {
               Research & Publications
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up">
-              Knowledge for Impact
+              Knowledge for Pan-Asian Impact
             </h1>
             <p className="text-lg text-white/70 leading-relaxed animate-fade-in-up delay-200">
-              Evidence-based research and publications driving policy dialogue and sustainable development.
+              Evidence-based research and publications driving policy dialogue and sustainable development across Asia.
             </p>
           </div>
         </div>
@@ -131,11 +131,11 @@ export default function ResearchPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#C5A059] mt-2" />
-                    <span className="text-[#475569] text-sm">Global Indian Diaspora Economics</span>
+                    <span className="text-[#475569] text-sm">Pan-Asian Diaspora Economics</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#C5A059] mt-2" />
-                    <span className="text-[#475569] text-sm">Cross-Border Trade & Investment</span>
+                    <span className="text-[#475569] text-sm">Cross-Border Trade & Investment in Asia</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#C5A059] mt-2" />
@@ -143,11 +143,11 @@ export default function ResearchPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#C5A059] mt-2" />
-                    <span className="text-[#475569] text-sm">Policy Impact Assessment</span>
+                    <span className="text-[#475569] text-sm">Regional Policy Impact Assessment</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#C5A059] mt-2" />
-                    <span className="text-[#475569] text-sm">Sustainable Development Metrics</span>
+                    <span className="text-[#475569] text-sm">Asian SDG Implementation Metrics</span>
                   </li>
                 </ul>
               </div>
@@ -164,11 +164,11 @@ export default function ResearchPage() {
               Our Commitment
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0A192F] mb-4">
-              SDG Alignment
+              Asian SDG Alignment
             </h2>
             <p className="text-[#475569] max-w-2xl mx-auto">
               All Foundation initiatives are aligned with the United Nations Sustainable Development Goals, 
-              ensuring our work contributes to global progress.
+              ensuring our work contributes to regional progress across Asian countries.
             </p>
           </div>
 
@@ -199,17 +199,17 @@ export default function ResearchPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-[#0A192F] mb-4">
-                  Measuring Our Impact
+                  Measuring Pan-Asian Impact
                 </h3>
                 <p className="text-[#475569] leading-relaxed mb-6">
                   The Foundation is developing comprehensive impact measurement frameworks 
-                  to track our contribution to SDG outcomes. Our research team works with 
-                  international partners to establish credible metrics and reporting standards.
+                  to track our contribution to SDG outcomes across Asian countries. Our research team works with 
+                  regional partners to establish credible metrics and reporting standards.
                 </p>
                 <div className="flex items-center gap-2 text-[#C5A059]">
                   <Clock className="w-4 h-4" />
                   <span className="font-accent uppercase tracking-wider text-xs">
-                    Impact Reports Coming Soon
+                    Asian Impact Reports Coming Soon
                   </span>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export default function ResearchPage() {
                 <div className="bg-[#F8F9FA] p-6 text-center">
                   <Target className="w-8 h-8 text-[#C5A059] mx-auto mb-3" />
                   <p className="font-accent uppercase tracking-wider text-xs text-[#0A192F]">
-                    Outcome Focused
+                    Regional Focused
                   </p>
                 </div>
                 <div className="bg-[#F8F9FA] p-6 text-center">
@@ -256,8 +256,8 @@ export default function ResearchPage() {
             </h2>
             <p className="text-[#475569] leading-relaxed mb-8">
               Our research team is preparing in-depth policy papers on critical issues affecting 
-              the global Indian community. These publications will provide evidence-based recommendations 
-              for policymakers, business leaders, and civil society organizations.
+              the Pan-Asian Indian community. These publications will provide evidence-based recommendations 
+              for policymakers, business leaders, and civil society organizations across Asian countries.
             </p>
             <div className="coming-soon-banner inline-flex items-center gap-2 px-6 py-3">
               <Clock className="w-5 h-5" />
@@ -276,7 +276,7 @@ export default function ResearchPage() {
             </h2>
             <p className="text-white/70 text-lg mb-10">
               We welcome collaboration with academic institutions, think tanks, and research organizations 
-              interested in studying the global Indian diaspora and sustainable development.
+              interested in studying the Pan-Asian Indian diaspora and sustainable development.
             </p>
             <Link to="/contact">
               <Button className="btn-gold">

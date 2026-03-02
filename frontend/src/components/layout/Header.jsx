@@ -1,18 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Button } from '../ui/button';
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from '../ui/sheet';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '../ui/dropdown-menu';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -53,7 +47,7 @@ export const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'glass border-b border-[#0A192F]/10 shadow-sm'
-          : 'bg-transparent'
+          : 'bg-white/95'
       }`}
     >
       <div className="container-wide">
@@ -64,13 +58,11 @@ export const Header = () => {
             data-testid="logo-link"
             className="flex items-center gap-3"
           >
-            <div className="w-12 h-12 bg-[#0A192F] flex items-center justify-center">
-              <span className="text-[#C5A059] font-bold text-lg font-accent">WIBCF</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="text-xs font-accent uppercase tracking-wider text-[#0A192F]/70">World Indian Business</p>
-              <p className="text-xs font-accent uppercase tracking-wider text-[#0A192F]/70">& Culture Foundation</p>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_business-culture-hub/artifacts/h0qbez6z_WIBCF%20Logo.jpeg"
+              alt="WIBCF Logo"
+              className="h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -115,15 +107,11 @@ export const Header = () => {
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
                 <div className="p-6 border-b border-[#0A192F]/10">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[#0A192F] flex items-center justify-center">
-                      <span className="text-[#C5A059] font-bold text-sm font-accent">WIBCF</span>
-                    </div>
-                    <div>
-                      <p className="text-xs font-accent uppercase tracking-wider text-[#0A192F]/70">World Indian Business</p>
-                      <p className="text-xs font-accent uppercase tracking-wider text-[#0A192F]/70">& Culture Foundation</p>
-                    </div>
-                  </div>
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_business-culture-hub/artifacts/h0qbez6z_WIBCF%20Logo.jpeg"
+                    alt="WIBCF Logo"
+                    className="h-12 w-auto object-contain"
+                  />
                 </div>
 
                 {/* Mobile Navigation */}

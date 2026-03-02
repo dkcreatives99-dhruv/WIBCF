@@ -4,7 +4,6 @@ import {
   Target, 
   Eye, 
   Heart,
-  Globe,
   Users,
   Lightbulb,
   Shield,
@@ -17,20 +16,20 @@ import {
 const coreValues = [
   { icon: Shield, title: 'Integrity', description: 'Upholding the highest ethical standards in all our endeavors.' },
   { icon: Users, title: 'Inclusivity', description: 'Embracing diversity and ensuring equal opportunities for all.' },
-  { icon: Heart, title: 'Cultural Respect', description: 'Honoring the rich tapestry of Indian heritage and global traditions.' },
+  { icon: Heart, title: 'Cultural Respect', description: 'Honoring the rich tapestry of Indian and Asian heritage.' },
   { icon: Lightbulb, title: 'Innovation', description: 'Driving creative solutions for contemporary challenges.' },
   { icon: Leaf, title: 'Sustainability', description: 'Committing to environmentally and socially responsible practices.' },
   { icon: Eye, title: 'Transparency', description: 'Operating with openness and accountability in all activities.' },
-  { icon: Handshake, title: 'Global Collaboration', description: 'Building bridges across nations for collective progress.' },
+  { icon: Handshake, title: 'Pan-Asian Collaboration', description: 'Building bridges across Asian nations for collective progress.' },
 ];
 
 const missionPoints = [
-  'Unite Indian-origin business leaders, entrepreneurs, and professionals across continents',
-  'Facilitate cross-border trade partnerships and investment opportunities',
-  'Preserve and promote Indian cultural heritage through diplomatic exchanges',
-  'Conduct research to influence policy decisions for sustainable development',
+  'Unite Indian-origin business leaders, entrepreneurs, and professionals across Asian countries',
+  'Facilitate cross-border trade partnerships and investment opportunities within Asia',
+  'Preserve and promote Indian cultural heritage through Pan-Asian diplomatic exchanges',
+  'Conduct research to influence policy decisions for sustainable development in Asia',
   'Nurture emerging leaders through mentorship and educational programs',
-  'Align all initiatives with UN Sustainable Development Goals'
+  'Align all initiatives with UN Sustainable Development Goals for regional impact'
 ];
 
 export default function AboutPage() {
@@ -47,10 +46,10 @@ export default function AboutPage() {
               About Us
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up">
-              Building Bridges Across Nations
+              Building Bridges Across Asia
             </h1>
             <p className="text-lg text-white/70 leading-relaxed animate-fade-in-up delay-200">
-              The World Indian Business & Culture Foundation is a global non-profit organization dedicated to fostering collaboration among Indian-origin leaders worldwide.
+              The World Indian Business & Culture Foundation is a Pan-Asia focused non-profit organization dedicated to fostering collaboration among Indian-origin leaders across Asian countries.
             </p>
           </div>
         </div>
@@ -67,13 +66,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#475569] leading-relaxed">
                 <p>
-                  The World Indian Business & Culture Foundation serves as a premier platform connecting the Indian diaspora across the globe. We operate at the intersection of international commerce, cultural preservation, and sustainable development.
+                  The World Indian Business & Culture Foundation serves as a premier Pan-Asian platform connecting the Indian diaspora across the continent. We operate at the intersection of regional commerce, cultural preservation, and sustainable development.
                 </p>
                 <p>
-                  Our foundation brings together accomplished professionals, visionary entrepreneurs, policy experts, and cultural ambassadors who share a common commitment to advancing Indian excellence on the world stage.
+                  Our foundation brings together accomplished professionals, visionary entrepreneurs, policy experts, and cultural ambassadors who share a common commitment to advancing Indian excellence and strengthening partnerships across Asian economies.
                 </p>
                 <p>
-                  Through strategic initiatives spanning business forums, cultural exchanges, and policy dialogues, we create meaningful opportunities for collaboration that transcend geographical boundaries while honoring the rich heritage of Indian civilization.
+                  Through strategic initiatives spanning business forums, cultural exchanges, and policy dialogues, we create meaningful opportunities for collaboration that strengthen Pan-Asian cooperation while honoring the rich heritage shared between India and Asian nations.
                 </p>
               </div>
             </div>
@@ -103,7 +102,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <blockquote className="text-xl md:text-2xl text-[#0A192F] font-bold leading-relaxed border-l-4 border-[#C5A059] pl-6">
-                "To become the leading global platform uniting Indian business excellence and cultural heritage for sustainable global impact."
+                "To become the leading Pan-Asian platform uniting Indian business excellence and cultural heritage for sustainable regional impact."
               </blockquote>
             </div>
           </div>
@@ -125,7 +124,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-[#475569] leading-relaxed mb-8">
-                Our mission is comprehensive and action-oriented, focusing on creating tangible impact across multiple dimensions of global Indian engagement.
+                Our mission is comprehensive and action-oriented, focusing on creating tangible impact across multiple dimensions of Pan-Asian engagement.
               </p>
               <ul className="space-y-4">
                 {missionPoints.map((point, index) => (
@@ -194,16 +193,16 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-[#475569] leading-relaxed text-left">
               <p>
-                The Indian diaspora represents one of the most influential and accomplished communities worldwide, with presence in virtually every major economy. From Silicon Valley to Singapore, London to Lagos, Indian professionals and entrepreneurs have made remarkable contributions to global progress.
+                The Indian diaspora represents one of the most influential and accomplished communities across Asia, with significant presence in virtually every major Asian economy. From Singapore to the UAE, Malaysia to Japan, Indian professionals and entrepreneurs have made remarkable contributions to regional progress.
               </p>
               <p>
-                Yet despite individual successes, there remains immense untapped potential in collective action. The Foundation exists to harness this potential by creating structured platforms for collaboration, knowledge exchange, and mutual support among Indian-origin leaders.
+                Yet despite individual successes, there remains immense untapped potential in collective action. The Foundation exists to harness this potential by creating structured platforms for collaboration, knowledge exchange, and mutual support among Indian-origin leaders across Asian countries.
               </p>
               <p>
-                We believe that by uniting the diaspora's diverse talents and perspectives, we can amplify impact on critical global challenges—from sustainable economic development to cultural preservation, from youth empowerment to policy innovation.
+                We believe that by uniting the diaspora's diverse talents and perspectives within the Asian context, we can amplify impact on critical regional challenges—from sustainable economic development to cultural preservation, from youth empowerment to policy innovation.
               </p>
               <p>
-                The Foundation serves as a bridge—connecting established leaders with emerging talent, linking traditional wisdom with modern innovation, and building pathways between the global Indian community and international institutions working toward shared goals.
+                The Foundation serves as a bridge—connecting established leaders with emerging talent, linking traditional wisdom with modern innovation, and building pathways between the Indian community and Asian institutions working toward shared goals.
               </p>
             </div>
             <div className="mt-12">
