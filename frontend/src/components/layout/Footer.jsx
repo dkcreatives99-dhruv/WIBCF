@@ -181,9 +181,24 @@ export const Footer = () => {
             <p className="text-white/40 text-sm text-center md:text-left">
               © 2026 WORLD INDIAN BUSINESS & CULTURE FOUNDATION. All Rights Reserved.
             </p>
-            <p className="text-white/30 text-xs">
-              Strengthening Partnerships Across Asia
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <p className="text-white/30 text-xs">
+                Strengthening Partnerships Across Asia
+              </p>
+              <span className="hidden md:inline text-white/20">|</span>
+              <p className="text-white/40 text-xs">
+                Designed & Managed by{' '}
+                <a 
+                  href="https://dkkineticdigital.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#C5A059] hover:text-[#C5A059]/80 transition-colors font-medium"
+                  data-testid="dk-kinetic-link"
+                >
+                  DK KINETIC DIGITAL
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
