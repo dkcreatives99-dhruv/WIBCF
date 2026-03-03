@@ -115,13 +115,13 @@ export default function HomePage() {
                 Uniting Indian Excellence Across Asia
               </h2>
               <div className="space-y-4 text-[#475569] leading-relaxed">
-                <p>
+                <p className="text-justify">
                   The World Indian Business & Culture Foundation stands at the intersection of Pan-Asian commerce and cultural preservation. We bring together Indian-origin leaders, entrepreneurs, and institutions from across Asian countries.
                 </p>
-                <p>
+                <p className="text-justify">
                   Our mission transcends geographical boundaries, creating a powerful network that fosters economic collaboration between India and Asian economies while honoring the rich tapestry of shared heritage.
                 </p>
-                <p>
+                <p className="text-justify">
                   Through strategic partnerships, policy dialogues, and cultural initiatives, we're building bridges that strengthen Pan-Asian cooperation and sustainable development.
                 </p>
               </div>

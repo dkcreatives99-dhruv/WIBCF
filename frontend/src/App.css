@@ -283,6 +283,12 @@
 
 .legal-content p {
   margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Justified text for professional look */
+.text-justify {
+  text-align: justify;
 }
 
 .legal-content ul {

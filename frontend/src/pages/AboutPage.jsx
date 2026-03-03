@@ -65,13 +65,13 @@ export default function AboutPage() {
                 Who We Are
               </h2>
               <div className="space-y-4 text-[#475569] leading-relaxed">
-                <p>
+                <p className="text-justify">
                   The World Indian Business & Culture Foundation serves as a premier Pan-Asian platform connecting the Indian diaspora across the continent. We operate at the intersection of regional commerce, cultural preservation, and sustainable development.
                 </p>
-                <p>
+                <p className="text-justify">
                   Our foundation brings together accomplished professionals, visionary entrepreneurs, policy experts, and cultural ambassadors who share a common commitment to advancing Indian excellence and strengthening partnerships across Asian economies.
                 </p>
-                <p>
+                <p className="text-justify">
                   Through strategic initiatives spanning business forums, cultural exchanges, and policy dialogues, we create meaningful opportunities for collaboration that strengthen Pan-Asian cooperation while honoring the rich heritage shared between India and Asian nations.
                 </p>
               </div>
@@ -192,16 +192,16 @@ export default function AboutPage() {
               Why We Exist
             </h2>
             <div className="space-y-6 text-[#475569] leading-relaxed text-left">
-              <p>
+              <p className="text-justify">
                 The Indian diaspora represents one of the most influential and accomplished communities across Asia, with significant presence in virtually every major Asian economy. From Singapore to the UAE, Malaysia to Japan, Indian professionals and entrepreneurs have made remarkable contributions to regional progress.
               </p>
-              <p>
+              <p className="text-justify">
                 Yet despite individual successes, there remains immense untapped potential in collective action. The Foundation exists to harness this potential by creating structured platforms for collaboration, knowledge exchange, and mutual support among Indian-origin leaders across Asian countries.
               </p>
-              <p>
+              <p className="text-justify">
                 We believe that by uniting the diaspora's diverse talents and perspectives within the Asian context, we can amplify impact on critical regional challenges—from sustainable economic development to cultural preservation, from youth empowerment to policy innovation.
               </p>
-              <p>
+              <p className="text-justify">
                 The Foundation serves as a bridge—connecting established leaders with emerging talent, linking traditional wisdom with modern innovation, and building pathways between the Indian community and Asian institutions working toward shared goals.
               </p>
             </div>
