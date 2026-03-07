@@ -124,7 +124,7 @@ export default function LeadershipPage() {
                         <span className="text-4xl font-bold text-[#C5A059]">RR</span>
                       </div>
                       <h3 className="text-2xl font-bold text-white mb-2">
-                        Mr. Ravichandren Raman
+                        Mr. Ravi Raman
                       </h3>
                       <p className="font-accent uppercase tracking-wider text-[#C5A059] text-sm">
                         Secretary General & Founder
@@ -153,7 +153,7 @@ export default function LeadershipPage() {
                 <div>
                   <h3 className="text-xl font-bold text-[#0A192F] mb-4">Professional Biography</h3>
                   <p className="text-[#475569] leading-relaxed mb-4 text-justify">
-                    An executive with extensive professional experiences and significant executive leadership accomplishments in local community development and business. Mr. Ravichandren, also known as Ravi Raman, has more than 30 years of experience as a Business Consultant.
+                    An executive with extensive professional experiences and significant executive leadership accomplishments in local community development and business. Mr. Ravi Raman has more than 30 years of experience as a Business Consultant.
                   </p>
                   <p className="text-[#475569] leading-relaxed text-justify">
                     He has worked as the Business Advisor for the Government Economy Project 'PESAN' under the Prime Minister's Department of Malaysia, demonstrating his commitment to national economic development and policy-level engagement.

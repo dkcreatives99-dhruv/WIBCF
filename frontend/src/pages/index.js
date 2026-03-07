@@ -6,6 +6,7 @@ export { default as ResearchPage } from './ResearchPage';
 export { default as MediaPage } from './MediaPage';
 export { default as ContactPage } from './ContactPage';
 export { default as MembershipPage } from './MembershipPage';
+export { default as RegistrationsPage } from './RegistrationsPage';
 export { default as TermsPage } from './TermsPage';
 export { default as PrivacyPage } from './PrivacyPage';
 export { default as DisclaimerPage } from './DisclaimerPage';

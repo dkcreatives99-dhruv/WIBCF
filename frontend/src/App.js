@@ -10,6 +10,7 @@ import {
   MediaPage,
   ContactPage,
   MembershipPage,
+  RegistrationsPage,
   TermsPage,
   PrivacyPage,
   DisclaimerPage,
@@ -28,6 +29,7 @@ function App() {
           <Route path="/programs" element={<ProgramsPage />} />
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/media" element={<MediaPage />} />
+          <Route path="/registrations" element={<RegistrationsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/membership" element={<MembershipPage />} />
           <Route path="/terms" element={<TermsPage />} />

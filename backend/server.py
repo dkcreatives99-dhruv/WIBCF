@@ -99,6 +99,84 @@ class NewsletterSubscribeResponse(BaseModel):
     status: str
 
 
+# Registration Models
+class ChildRegistrationCreate(BaseModel):
+    child_name: str = Field(..., min_length=2, max_length=100)
+    age_group: str
+    parent_name: str = Field(..., min_length=2, max_length=100)
+    parent_phone: str = Field(..., min_length=8, max_length=20)
+    email: EmailStr
+    country: str
+    cultural_interest: str
+    previous_experience: Optional[str] = Field(None, max_length=500)
+    message: Optional[str] = Field(None, max_length=1000)
+
+
+class YouthRegistrationCreate(BaseModel):
+    full_name: str = Field(..., min_length=2, max_length=100)
+    age: int = Field(..., ge=18, le=40)
+    email: EmailStr
+    phone: str = Field(..., min_length=8, max_length=20)
+    country: str
+    area_of_interest: str
+    purpose: str = Field(..., min_length=10, max_length=1000)
+
+
+class AdultRegistrationCreate(BaseModel):
+    full_name: str = Field(..., min_length=2, max_length=100)
+    email: EmailStr
+    phone: str = Field(..., min_length=8, max_length=20)
+    address: str = Field(..., min_length=10, max_length=500)
+    country: str
+    passport_id: Optional[str] = Field(None, max_length=50)
+    purpose: str = Field(..., min_length=10, max_length=1000)
+    areas_of_interest: str
+
+
+class InstitutionRegistrationCreate(BaseModel):
+    organization_name: str = Field(..., min_length=2, max_length=200)
+    institution_type: str
+    contact_person: str = Field(..., min_length=2, max_length=100)
+    email: EmailStr
+    phone: str = Field(..., min_length=8, max_length=20)
+    country: str
+    website: Optional[str] = Field(None, max_length=200)
+    purpose: str = Field(..., min_length=10, max_length=1000)
+
+
+class BusinessTrainingCreate(BaseModel):
+    full_name: str = Field(..., min_length=2, max_length=100)
+    email: EmailStr
+    phone: str = Field(..., min_length=8, max_length=20)
+    country: str
+    business_profession: str = Field(..., min_length=2, max_length=200)
+    business_stage: str
+    guidance_area: str = Field(..., min_length=10, max_length=500)
+    message: Optional[str] = Field(None, max_length=1000)
+
+
+class VolunteerRegistrationCreate(BaseModel):
+    full_name: str = Field(..., min_length=2, max_length=100)
+    age: int = Field(..., ge=16, le=100)
+    email: EmailStr
+    phone: str = Field(..., min_length=8, max_length=20)
+    country: str
+    skills: str = Field(..., min_length=5, max_length=500)
+    areas_of_interest: str
+    availability: str
+    previous_experience: Optional[str] = Field(None, max_length=500)
+
+
+class RegistrationResponse(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+    
+    id: str
+    registration_type: str
+    created_at: str
+    status: str
+    message: str
+
+
 # API Routes
 @api_router.get("/")
 async def root():
@@ -255,6 +333,189 @@ async def get_status_checks():
             check['timestamp'] = datetime.fromisoformat(check['timestamp'])
     
     return status_checks
+
+
+# Registration Endpoints
+@api_router.post("/registrations/child", response_model=RegistrationResponse)
+async def register_child(form_data: ChildRegistrationCreate):
+    """Register a child for cultural programs"""
+    try:
+        reg_id = str(uuid.uuid4())
+        created_at = datetime.now(timezone.utc).isoformat()
+        
+        doc = {
+            "id": reg_id,
+            "registration_type": "child_cultural",
+            **form_data.model_dump(),
+            "created_at": created_at,
+            "status": "pending"
+        }
+        
+        await db.registrations.insert_one(doc)
+        
+        return RegistrationResponse(
+            id=reg_id,
+            registration_type="child_cultural",
+            created_at=created_at,
+            status="pending",
+            message="Child registration submitted successfully"
+        )
+    except Exception as e:
+        logging.error(f"Error in child registration: {e}")
+        raise HTTPException(status_code=500, detail="Failed to submit registration")
+
+
+@api_router.post("/registrations/youth", response_model=RegistrationResponse)
+async def register_youth(form_data: YouthRegistrationCreate):
+    """Register as youth member"""
+    try:
+        reg_id = str(uuid.uuid4())
+        created_at = datetime.now(timezone.utc).isoformat()
+        
+        doc = {
+            "id": reg_id,
+            "registration_type": "youth_member",
+            **form_data.model_dump(),
+            "created_at": created_at,
+            "status": "pending"
+        }
+        
+        await db.registrations.insert_one(doc)
+        
+        return RegistrationResponse(
+            id=reg_id,
+            registration_type="youth_member",
+            created_at=created_at,
+            status="pending",
+            message="Youth registration submitted successfully"
+        )
+    except Exception as e:
+        logging.error(f"Error in youth registration: {e}")
+        raise HTTPException(status_code=500, detail="Failed to submit registration")
+
+
+@api_router.post("/registrations/adult", response_model=RegistrationResponse)
+async def register_adult(form_data: AdultRegistrationCreate):
+    """Register as adult/senior member"""
+    try:
+        reg_id = str(uuid.uuid4())
+        created_at = datetime.now(timezone.utc).isoformat()
+        
+        doc = {
+            "id": reg_id,
+            "registration_type": "adult_member",
+            **form_data.model_dump(),
+            "created_at": created_at,
+            "status": "pending"
+        }
+        
+        await db.registrations.insert_one(doc)
+        
+        return RegistrationResponse(
+            id=reg_id,
+            registration_type="adult_member",
+            created_at=created_at,
+            status="pending",
+            message="Adult/Senior registration submitted successfully"
+        )
+    except Exception as e:
+        logging.error(f"Error in adult registration: {e}")
+        raise HTTPException(status_code=500, detail="Failed to submit registration")
+
+
+@api_router.post("/registrations/institution", response_model=RegistrationResponse)
+async def register_institution(form_data: InstitutionRegistrationCreate):
+    """Register an institution/organization"""
+    try:
+        reg_id = str(uuid.uuid4())
+        created_at = datetime.now(timezone.utc).isoformat()
+        
+        doc = {
+            "id": reg_id,
+            "registration_type": "institution",
+            **form_data.model_dump(),
+            "created_at": created_at,
+            "status": "pending"
+        }
+        
+        await db.registrations.insert_one(doc)
+        
+        return RegistrationResponse(
+            id=reg_id,
+            registration_type="institution",
+            created_at=created_at,
+            status="pending",
+            message="Institution registration submitted successfully"
+        )
+    except Exception as e:
+        logging.error(f"Error in institution registration: {e}")
+        raise HTTPException(status_code=500, detail="Failed to submit registration")
+
+
+@api_router.post("/registrations/business-training", response_model=RegistrationResponse)
+async def register_business_training(form_data: BusinessTrainingCreate):
+    """Register for business training program"""
+    try:
+        reg_id = str(uuid.uuid4())
+        created_at = datetime.now(timezone.utc).isoformat()
+        
+        doc = {
+            "id": reg_id,
+            "registration_type": "business_training",
+            **form_data.model_dump(),
+            "created_at": created_at,
+            "status": "pending"
+        }
+        
+        await db.registrations.insert_one(doc)
+        
+        return RegistrationResponse(
+            id=reg_id,
+            registration_type="business_training",
+            created_at=created_at,
+            status="pending",
+            message="Business training registration submitted successfully"
+        )
+    except Exception as e:
+        logging.error(f"Error in business training registration: {e}")
+        raise HTTPException(status_code=500, detail="Failed to submit registration")
+
+
+@api_router.post("/registrations/volunteer", response_model=RegistrationResponse)
+async def register_volunteer(form_data: VolunteerRegistrationCreate):
+    """Register as volunteer"""
+    try:
+        reg_id = str(uuid.uuid4())
+        created_at = datetime.now(timezone.utc).isoformat()
+        
+        doc = {
+            "id": reg_id,
+            "registration_type": "volunteer",
+            **form_data.model_dump(),
+            "created_at": created_at,
+            "status": "pending"
+        }
+        
+        await db.registrations.insert_one(doc)
+        
+        return RegistrationResponse(
+            id=reg_id,
+            registration_type="volunteer",
+            created_at=created_at,
+            status="pending",
+            message="Volunteer registration submitted successfully"
+        )
+    except Exception as e:
+        logging.error(f"Error in volunteer registration: {e}")
+        raise HTTPException(status_code=500, detail="Failed to submit registration")
+
+
+@api_router.get("/registrations")
+async def get_all_registrations(registration_type: Optional[str] = None):
+    """Get all registrations, optionally filtered by type"""
+    query = {} if not registration_type else {"registration_type": registration_type}
+    registrations = await db.registrations.find(query, {"_id": 0}).to_list(1000)
+    return registrations
 
 
 # Include the router in the main app

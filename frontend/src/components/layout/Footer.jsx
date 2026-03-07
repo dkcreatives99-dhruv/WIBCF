@@ -16,6 +16,7 @@ const quickLinks = [
   { name: 'Programs', path: '/programs' },
   { name: 'Research', path: '/research' },
   { name: 'Media', path: '/media' },
+  { name: 'Registrations', path: '/registrations' },
   { name: 'Contact', path: '/contact' },
 ];
 

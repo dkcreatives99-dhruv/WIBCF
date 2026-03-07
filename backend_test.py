@@ -212,6 +212,192 @@ class NGOWebsiteAPITester:
             )
         return False
 
+    def test_child_registration(self):
+        """Test child registration"""
+        timestamp = datetime.now().strftime('%H%M%S')
+        child_data = {
+            "child_name": f"Test Child {timestamp}",
+            "age_group": "6 – 12 Years",
+            "parent_name": f"Test Parent {timestamp}",
+            "parent_phone": "+60123456789",
+            "email": f"parent{timestamp}@example.com",
+            "country": "Malaysia",
+            "cultural_interest": "Indian",
+            "previous_experience": "None",
+            "message": "Test child registration"
+        }
+        
+        success, response = self.run_test(
+            "Child Registration",
+            "POST",
+            "/registrations/child",
+            200,
+            data=child_data
+        )
+        
+        if success and response:
+            return response.get('id')
+        return None
+
+    def test_youth_registration(self):
+        """Test youth registration"""
+        timestamp = datetime.now().strftime('%H%M%S')
+        youth_data = {
+            "full_name": f"Test Youth {timestamp}",
+            "age": 25,
+            "email": f"youth{timestamp}@example.com",
+            "phone": "+60123456789",
+            "country": "Malaysia",
+            "area_of_interest": "Leadership Programs",
+            "purpose": "I want to participate in youth leadership and cultural programs"
+        }
+        
+        success, response = self.run_test(
+            "Youth Registration",
+            "POST",
+            "/registrations/youth",
+            200,
+            data=youth_data
+        )
+        
+        if success and response:
+            return response.get('id')
+        return None
+
+    def test_adult_registration(self):
+        """Test adult registration"""
+        timestamp = datetime.now().strftime('%H%M%S')
+        adult_data = {
+            "full_name": f"Test Adult {timestamp}",
+            "email": f"adult{timestamp}@example.com",
+            "phone": "+60123456789",
+            "address": "123 Test Street, Test City",
+            "country": "Malaysia",
+            "passport_id": "A12345678",
+            "purpose": "I want to join community initiatives and cultural programs",
+            "areas_of_interest": "Community Development, Cultural Events"
+        }
+        
+        success, response = self.run_test(
+            "Adult Registration",
+            "POST",
+            "/registrations/adult",
+            200,
+            data=adult_data
+        )
+        
+        if success and response:
+            return response.get('id')
+        return None
+
+    def test_institution_registration(self):
+        """Test institution registration"""
+        timestamp = datetime.now().strftime('%H%M%S')
+        institution_data = {
+            "organization_name": f"Test Organization {timestamp}",
+            "institution_type": "NGO",
+            "contact_person": f"Test Contact {timestamp}",
+            "email": f"institution{timestamp}@example.com",
+            "phone": "+60123456789",
+            "country": "Malaysia",
+            "website": "https://testorg.com",
+            "purpose": "We want to collaborate on cultural and community development initiatives"
+        }
+        
+        success, response = self.run_test(
+            "Institution Registration",
+            "POST",
+            "/registrations/institution",
+            200,
+            data=institution_data
+        )
+        
+        if success and response:
+            return response.get('id')
+        return None
+
+    def test_business_training_registration(self):
+        """Test business training registration"""
+        timestamp = datetime.now().strftime('%H%M%S')
+        business_data = {
+            "full_name": f"Test Business Owner {timestamp}",
+            "email": f"business{timestamp}@example.com",
+            "phone": "+60123456789",
+            "country": "Malaysia",
+            "business_profession": "Software Development",
+            "business_stage": "Growing",
+            "guidance_area": "Need guidance on business expansion and marketing strategies",
+            "message": "Looking forward to the morning business breakfast sessions"
+        }
+        
+        success, response = self.run_test(
+            "Business Training Registration",
+            "POST",
+            "/registrations/business-training",
+            200,
+            data=business_data
+        )
+        
+        if success and response:
+            return response.get('id')
+        return None
+
+    def test_volunteer_registration(self):
+        """Test volunteer registration"""
+        timestamp = datetime.now().strftime('%H%M%S')
+        volunteer_data = {
+            "full_name": f"Test Volunteer {timestamp}",
+            "age": 28,
+            "email": f"volunteer{timestamp}@example.com",
+            "phone": "+60123456789",
+            "country": "Malaysia",
+            "skills": "Event Management, Communication, Marketing",
+            "areas_of_interest": "Cultural Event Support",
+            "availability": "Weekends",
+            "previous_experience": "Volunteered at local community events"
+        }
+        
+        success, response = self.run_test(
+            "Volunteer Registration",
+            "POST",
+            "/registrations/volunteer",
+            200,
+            data=volunteer_data
+        )
+        
+        if success and response:
+            return response.get('id')
+        return None
+
+    def test_get_all_registrations(self):
+        """Test getting all registrations"""
+        return self.run_test(
+            "Get All Registrations",
+            "GET",
+            "/registrations",
+            200
+        )
+
+    def test_invalid_youth_registration(self):
+        """Test youth registration with invalid age"""
+        invalid_data = {
+            "full_name": "Test Youth",
+            "age": 17,  # Below minimum age of 18
+            "email": "youth@example.com",
+            "phone": "+60123456789",
+            "country": "Malaysia",
+            "area_of_interest": "Leadership",
+            "purpose": "Test purpose"
+        }
+        
+        return self.run_test(
+            "Invalid Youth Registration (should fail)",
+            "POST",
+            "/registrations/youth",
+            422,  # Validation error
+            data=invalid_data
+        )
+
 def main():
     print("🚀 Starting WORLD INDIAN BUSINESS & CULTURE FOUNDATION API Tests")
     print("=" * 70)
@@ -244,6 +430,18 @@ def main():
     print("-" * 40)
     newsletter_id = tester.test_newsletter_subscription()
     tester.test_duplicate_newsletter_subscription()
+    
+    # Run registration tests
+    print("\n📝 REGISTRATION TESTS")
+    print("-" * 40)
+    child_id = tester.test_child_registration()
+    youth_id = tester.test_youth_registration()
+    adult_id = tester.test_adult_registration()
+    institution_id = tester.test_institution_registration()
+    business_id = tester.test_business_training_registration()
+    volunteer_id = tester.test_volunteer_registration()
+    tester.test_get_all_registrations()
+    tester.test_invalid_youth_registration()
     
     # Print final results
     print("\n" + "=" * 70)
