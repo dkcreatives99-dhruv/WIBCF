@@ -78,7 +78,7 @@ export default function LeadershipPage() {
                   <span className="text-5xl font-bold text-[#C5A059]">DG</span>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-3">
-                  Dato Gandeson
+                  Dato Gandesan Letchumanan
                 </h3>
                 <p className="font-accent uppercase tracking-wider text-[#C5A059] text-sm mb-6">
                   Chairman & Founder
@@ -93,7 +93,7 @@ export default function LeadershipPage() {
                   </span>
                 </div>
                 <p className="text-[#475569] mt-4 text-justify max-w-xl mx-auto">
-                  As Chairman and Founder of the World Indian Business & Culture Foundation, Dato Gandeson provides strategic vision and leadership for the organisation's Pan-Asian initiatives. His comprehensive profile will be published shortly.
+                  As Chairman and Founder of the World Indian Business & Culture Foundation, Dato Gandesan Letchumanan provides strategic vision and leadership for the organisation's Pan-Asian initiatives. His comprehensive profile will be published shortly.
                 </p>
               </div>
             </div>
