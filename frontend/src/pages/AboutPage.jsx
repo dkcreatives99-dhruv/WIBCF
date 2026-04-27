@@ -78,7 +78,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <img
-                https://raw.githubusercontent.com/dkcreatives99-dhruv/WIBCF/main/frontend/src/New%20Image.jpeg"
+                src="https://raw.githubusercontent.com/dkcreatives99-dhruv/WIBCF/main/frontend/src/New%20Image.jpeg"
                 alt="International Business Meeting"
                 className="w-full h-[450px] object-cover"
               />
